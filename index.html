@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viva Nova — Hydrate Like You Mean It</title>
+  <meta name="description" content="Viva Nova is a low-sugar electrolyte sports drink with coconut water and five electrolytes. Six bold flavours in cans and bottles, from singles to 24-packs.">
+  <meta name="theme-color" content="#F7F5F0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23C8FF1A'/%3E%3Cpath d='M32 10l6 16 16 6-16 6-6 16-6-16-16-6 16-6z' fill='%230E0E14'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-word" aria-hidden="true">NOVA</div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span>Electrolyte hydration drink</p>
+          <h1 class="display hero__title">Hydrate<br>like you<br><span class="mark">mean it.</span></h1>
+          <p class="hero__lede">Built for the last rep, the extra mile and the final whistle. Five electrolytes, real coconut water and just 25 calories a can.</p>
+          <div class="hero__cta">
+            <a href="#shop" class="btn btn--ink btn--lg">Shop the range <span aria-hidden="true">→</span></a>
+            <a href="#sports" class="btn btn--ghost btn--lg">Find your sport</a>
+          </div>
+          <ul class="hero__stats">
+            <li><b data-count="25">25</b><span>Calories</span></li>
+            <li><b data-count="5">5</b><span>Electrolytes</span></li>
+            <li><b data-count="3" data-suffix="g">3g</b><span>Sugar</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__stage">
+          <div class="ring" aria-hidden="true"></div>
+          <div class="ring ring--2" aria-hidden="true"></div>
+          <svg class="spark spark--1" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0l5 15 15 5-15 5-5 15-5-15-15-5 15-5z"/></svg>
+          <svg class="spark spark--2" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0l5 15 15 5-15 5-5 15-5-15-15-5 15-5z"/></svg>
+          <svg class="spark spark--3" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0l5 15 15 5-15 5-5 15-5-15-15-5 15-5z"/></svg>
+          <div class="hero__cans" id="heroCans"></div>
+          <div class="hero__label">
+            <span class="hero__index" id="heroIndex">01 / 06</span>
+            <span class="display hero__flav-name" id="heroFlavName"></span>
+          </div>
+          <div class="hero__picker" id="heroPicker" role="tablist" aria-label="Choose a flavour"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tickers -->
+    <div class="tickers" aria-hidden="true">
+      <div class="ticker ticker--b"><div class="ticker__track">
+        <span>Replenish</span><i>✦</i><span>Recover</span><i>✦</i><span>Repeat</span><i>✦</i><span>Replenish</span><i>✦</i><span>Recover</span><i>✦</i><span>Repeat</span><i>✦</i>
+        <span>Replenish</span><i>✦</i><span>Recover</span><i>✦</i><span>Repeat</span><i>✦</i><span>Replenish</span><i>✦</i><span>Recover</span><i>✦</i><span>Repeat</span><i>✦</i>
+      </div></div>
+      <div class="ticker ticker--a"><div class="ticker__track">
+        <span>Hydrate</span><i>✦</i><span>Ignite</span><i>✦</i><span>Go again</span><i>✦</i><span>Hydrate</span><i>✦</i><span>Ignite</span><i>✦</i><span>Go again</span><i>✦</i>
+        <span>Hydrate</span><i>✦</i><span>Ignite</span><i>✦</i><span>Go again</span><i>✦</i><span>Hydrate</span><i>✦</i><span>Ignite</span><i>✦</i><span>Go again</span><i>✦</i>
+      </div></div>
+    </div>
+
+    <!-- Flavours -->
+    <section class="section flavours" id="flavours">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="dot"></span>The line-up</p>
+            <h2 class="display section-title">Six flavours.<br><span class="stroke">Zero boring.</span></h2>
+          </div>
+          <p class="section-sub">Every flavour carries the same performance formula. Tap a can to see tasting notes, nutrition and every pack size.</p>
+        </div>
+        <div class="flavour-grid" id="flavourGrid"></div>
+      </div>
+    </section>
+
+    <!-- Can or bottle -->
+    <section class="section formats bg-surface-2" id="bottles">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="dot"></span>New: now in bottles</p>
+            <h2 class="display section-title">Can or<br><span class="mark" style="--mark:var(--volt)">bottle?</span></h2>
+          </div>
+          <p class="section-sub">Same formula, same six flavours, same 500ml. Grab a slim can for the fridge, or a resealable sports-cap bottle for the kit bag.</p>
+        </div>
+        <div class="formats__grid" id="formatCards"></div>
+        <div class="bottle-row" id="bottleRow"></div>
+      </div>
+    </section>
+
+    <!-- Science -->
+    <section class="section science bg-surface" id="science">
+      <div class="container">
+        <div class="science__grid">
+          <div class="science__intro reveal">
+            <p class="eyebrow"><span class="dot"></span>The formula</p>
+            <h2 class="display section-title">What's in.<br><span class="stroke">What's not.</span></h2>
+            <p class="section-sub">Every can has one job: put back what your body loses when you push hard, minus the sugar crash.</p>
+            <ul class="checklist">
+              <li>Caffeine-free</li>
+              <li>Vegan-friendly</li>
+              <li>No artificial colours</li>
+              <li>Recyclable cans and bottles</li>
+            </ul>
+          </div>
+          <div class="ingredients">
+            <article class="ing reveal" style="--c:var(--lime)">
+              <b class="ing__num"><span data-count="680">680</span><i>mg</i></b>
+              <h3>Electrolyte blend</h3>
+              <p>Sodium, potassium, magnesium, calcium and chloride. The five minerals sweat carries away.</p>
+            </article>
+            <article class="ing reveal" style="--c:var(--volt)">
+              <b class="ing__num"><span data-count="10">10</span><i>%</i></b>
+              <h3>Coconut water</h3>
+              <p>Naturally rich in potassium for smoother, easier rehydration.</p>
+            </article>
+            <article class="ing reveal" style="--c:var(--pink)">
+              <b class="ing__num">B<i>3·6·12</i></b>
+              <h3>Vitamin complex</h3>
+              <p>B-vitamins that support normal energy release, so you finish as strong as you started.</p>
+            </article>
+            <article class="ing reveal" style="--c:var(--blaze)">
+              <b class="ing__num"><span data-count="25">25</span><i>kcal</i></b>
+              <h3>Per 500ml serve</h3>
+              <p>Light enough to sip all session. No heavy feeling, no crash.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="compare on-ink reveal">
+          <div class="compare__head">
+            <h3 class="display">Viva Nova vs. the usual</h3>
+            <small>Per 500ml. Comparison against typical sugar-based sports drinks.</small>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col"><span class="sr-only">Metric</span></th><th scope="col" class="us">Viva Nova</th><th scope="col">Typical sports drink</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Sugar</th><td class="us">3g</td><td>20g+</td></tr>
+                <tr><th scope="row">Calories</th><td class="us">25</td><td>80+</td></tr>
+                <tr><th scope="row">Electrolytes</th><td class="us">5 minerals</td><td>2–3 minerals</td></tr>
+                <tr><th scope="row">Coconut water</th><td class="us">✓ Yes</td><td>✕ No</td></tr>
+                <tr><th scope="row">Artificial colours</th><td class="us">None</td><td>Often</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports -->
+    <section class="section sports" id="sports">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="dot"></span>Made for movement</p>
+            <h2 class="display section-title">Built for<br><span class="mark" style="--mark:var(--lime)">every arena.</span></h2>
+          </div>
+          <p class="section-sub">Pick your sport for a hydration game plan, pro tips and the flavours that suit it best.</p>
+        </div>
+        <div class="tiles" id="sportTiles"></div>
+
+        <div class="timeline on-ink reveal">
+          <div class="step"><span class="step__tag">Before</span><h4>30 min out</h4><p>One can to top up your electrolytes before you start.</p></div>
+          <div class="step"><span class="step__tag">During</span><h4>Every 15–20 min</h4><p>Small, regular sips, especially when it's hot.</p></div>
+          <div class="step"><span class="step__tag">After</span><h4>Within 30 min</h4><p>Replace what you sweated out and start recovering.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="section shop bg-surface-2" id="shop">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="dot"></span>Shop</p>
+            <h2 class="display section-title">Stock up.<br><span class="stroke">Go harder.</span></h2>
+          </div>
+          <p class="section-sub">Cans or bottles, a single to try or 12 and 24-packs for the season. Subscribe on bigger packs for 15% off.</p>
+        </div>
+        <div class="shop-bar reveal">
+          <span class="shop-bar__label">Show me</span>
+          <div class="fmt fmt--lg" id="shopFmt" role="radiogroup" aria-label="Format for every product"></div>
+        </div>
+        <div class="shop-grid" id="shopGrid"></div>
+      </div>
+    </section>
+
+    <!-- Subscribe band -->
+    <section class="band">
+      <div class="container band__inner reveal">
+        <div>
+          <p class="eyebrow">Subscribe &amp; save</p>
+          <h2 class="display band__title">Never<br>run dry.</h2>
+        </div>
+        <ul class="band__list">
+          <li><b>15%</b> off every delivery</li>
+          <li><b>Swap</b> flavours any time</li>
+          <li><b>Skip</b> or cancel in one click</li>
+        </ul>
+        <a href="#shop" class="btn btn--ink btn--lg">Start subscribing <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="dot"></span>Questions</p>
+          <h2 class="display section-title">Got<br>questions?</h2>
+          <p class="section-sub">Can't find what you need? Email <a class="link" href="mailto:hello@vivanova.com">hello@vivanova.com</a></p>
+        </div>
+        <div class="acc reveal">
+          <details open>
+            <summary>What makes Viva Nova different?</summary>
+            <p>Most sports drinks rely on sugar. Viva Nova uses a five-mineral electrolyte blend, 10% coconut water and B-vitamins, with just 3g of sugar and 25 calories per 500ml can.</p>
+          </details>
+          <details>
+            <summary>Do you sell bottles as well as cans?</summary>
+            <p>Yes. Every flavour comes in a 500ml can or a 500ml bottle with a resealable sports cap. The drink inside is exactly the same. Pick the format on any product, or switch the whole shop to bottles.</p>
+          </details>
+          <details>
+            <summary>Can I buy just one?</summary>
+            <p>Yes. Cans come as a single, a 4-pack, a 12-pack or a 24-pack. Bottles come as a single, a 6-pack, a 12-pack or a 24-pack. Bigger packs cost less each.</p>
+          </details>
+          <details>
+            <summary>When should I drink it?</summary>
+            <p>Before, during or after training. One can about 30 minutes before, small sips every 15–20 minutes during, and one after to rehydrate. Each sport page has a detailed game plan.</p>
+          </details>
+          <details>
+            <summary>Does it contain caffeine? Is it vegan?</summary>
+            <p>Viva Nova is completely caffeine-free and vegan-friendly, so you can drink it any time of day.</p>
+          </details>
+          <details>
+            <summary>How does the subscription work?</summary>
+            <p>Subscriptions are available on 12 and 24-packs. You'll get 15% off and a delivery every 4 weeks, and you can skip, swap flavours or cancel whenever you like.</p>
+          </details>
+          <details>
+            <summary>How much is delivery?</summary>
+            <p>UK delivery is free on orders over £30. Otherwise it's £3.95. Orders placed before 2pm on a working day are dispatched the same day.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter__inner reveal">
+        <h2 class="display newsletter__title">Join the<br>Nova Squad</h2>
+        <div>
+          <p>Get early flavour drops, athlete-only offers and <b>10% off your first order</b>.</p>
+          <form class="newsletter__form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" required autocomplete="email">
+            <button class="btn btn--ink" type="submit">Sign me up</button>
+          </form>
+          <small>No spam. Unsubscribe any time.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
